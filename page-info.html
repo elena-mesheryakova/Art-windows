@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Арт Окна</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+  </head>
+  <body>
+    <!--START HEADER-->
+    <header class="header header--color">
+      <div class="header__border header__border--color">
+        <div class="container">
+          <div class="header-top">
+            <a class="logo" href="#">
+              <img src="./icons/logo.svg" alt="logo"
+            /></a>
+            <div class="header-top__box">
+              <div class="header-top__item header-top__item--grafic">
+                <p class="header-top__item-text">Часы работы:</p>
+                <div class="header-top__item-info header-top__item-info--color">
+                  8:00 - 20:00
+                </div>
+              </div>
+              <div class="header-top__item header-top__item--adress">
+                <p class="header-top__item-text">Адрес:</p>
+                <div class="header-top__item-info header-top__item-info--color">
+                  г.Город, ул. Улица, д. Дом
+                </div>
+              </div>
+              <div class="header-top__item header-top__item--phone">
+                <p class="header-top__item-text">Телефон:</p>
+                <a
+                  class="header-top__item-info header-top__item-info--color"
+                  href="tel:79999999999"
+                  >+7 999 999 99 99</a
+                >
+              </div>
+              <div class="header-top__item header-top__item--mail">
+                <p class="header-top__item-text">Эл. почта:</p>
+                <a
+                  class="header-top__item-info header-top__item-info--color"
+                  href="mailto:email@email.ru"
+                  >email@email.ru</a
+                >
+              </div>
+            </div>
+            <div class="menu-burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-bottom">
+          <nav class="menu">
+            <ul>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#"
+                  >Балконы и лоджии</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#">Окна</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#">Двери</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#"
+                  >Дома и коттеджи</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#">Калькулятор</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#">Акции</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#"
+                  >Сотрудничество</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link menu__link--color" href="#">О компании</a>
+              </li>
+              <li class="menu__list menu__list-mobile">
+                <p class="menu__list-text-mobile">Телефон:</p>
+                <a class="menu__link menu__link-mobile" href="tel:79999999999"
+                  >+7 999 999 99 99</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--END HEADER-->
+
+    <!--START INFO-BLOG-->
+    <section class="info-blog">
+      <div class="container">
+        <div class="info-blog__inner">
+          <div class="info-blog__description">
+            <h1 class="info-blog__title">О компании</h1>
+            <p class="info-blog__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero amet velit
+              arcu. Massa amet, a, habitantLorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Feugiat purus ut massa egestas urna
+              ut. Vitae ipsum nunc libero amet velit arcu. Massa amet, a,
+              habitantLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Feugiat purus ut massa egestas urna ut. Vitae ipsum nunc libero
+              amet velit arcu. Massa amet, a, habitantLorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Feugiat purus ut massa egestas
+              urna ut. Vitae ipsum nunc libero amet velit arcu. Massa amet, a,
+              habitantLorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Feugiat purus ut massa egestas urna ut. Vitae ipsum nunc libero
+              amet velit arcu. Massa amet, a, habitant
+            </p>
+          </div>
+          <div class="info-blog__img">
+            <img
+              src="./img/page-info.png"
+              alt="photo info-blog"
+              title="photo info-blog"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END INFO-BLOG-->
+
+    <!--START MODAL WINDOW-->
+
+    <form id="modal-form" class="form white-popup-block mfp-hide">
+      <h4 class="form__title">Оставить заявку</h4>
+      <input type="text" name="name" placeholder="Ваше имя" />
+      <input
+        type="tel"
+        name="phone"
+        id="mask-phone"
+        placeholder="Номер телефона *"
+      />
+      <input type="email" name="email" placeholder="E-mail" />
+      <button class="form__btn" type="submit">Отправить</button>
+
+      <input class="form__check" type="checkbox" id="form__checkbox" />
+      <label for="form__checkbox" class="form__label">
+        Отправляя данные вы даете согласие на обработку персональных данных в
+        соответствии с политикой конфиденциальности
+      </label>
+    </form>
+
+    <!--END MODAL WINDOW-->
+    <!--START CALC-FORM-->
+
+    <form
+      class="calc-form calc-form--mb"
+      data-aos="flip-down"
+      data-aos-duration="1000"
+    >
+      <h2 class="calc-form__title">
+        Рассчитайте стоимость остекления балкона со скидкой 35%
+      </h2>
+      <input type="text" name="name" placeholder="Ваше имя" />
+      <input
+        type="tel"
+        name="phone"
+        class="phone-calc"
+        placeholder="Номер телефона"
+      />
+      <a class="calc-form__btn popup-form" href="#modal-form"
+        >Заказать звонок</a
+      >
+    </form>
+
+    <!--END CALC-FORM-->
+    <!--START ADVANTAGES-->
+ 
+    <section
+      class="advantages"
+      style="background: url('../img/advantages-bg-m.png') no-repeat"
+    >
+      <div class="container">
+        <div class="advantages__inner">
+          <div class="advantages__info">
+            <h2 class="advantages__title">Наши преимущества</h2>
+            <p class="advantages__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero amet velit
+              arcu. Massa amet, a, habitant diam tortor lorem non congue sit.
+              Pretium aliquam, mattis imperdiet viverra aliquam. Accumsan lectus
+              maecenas eleifend auctor.
+            </p>
+          </div>
+          <div class="advantages__box">
+            <div
+              class="advantages__item"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <div class="advantages__img">
+                <img
+                  src="./icons/advantages-1.svg"
+                  alt="advantages"
+                  title="quality"
+                />
+              </div>
+
+              <div class="advantages__item-title">Качество</div>
+              <p class="advantages__item-text">
+                Elementum posuere felis lacus diam amet mauris pellentesque.
+              </p>
+            </div>
+            <div
+              class="advantages__item"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <div class="advantages__img">
+                <img
+                  src="./icons/advantages-2.svg"
+                  alt="advantages"
+                  title="durability"
+                />
+              </div>
+
+              <div class="advantages__item-title">Долговечность</div>
+              <p class="advantages__item-text">
+                Elementum posuere felis lacus diam amet mauris pellentesque.
+              </p>
+            </div>
+            <div
+              class="advantages__item"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <div class="advantages__img">
+                <img
+                  src="./icons/advantages-3.svg"
+                  alt="advantages"
+                  title="speed"
+                />
+              </div>
+
+              <div class="advantages__item-title">Скорость</div>
+              <p class="advantages__item-text">
+                Elementum posuere felis lacus diam amet mauris pellentesque.
+              </p>
+            </div>
+            <div
+              class="advantages__item"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+            >
+              <div class="advantages__img">
+                <img
+                  src="./icons/advantages-4.svg"
+                  alt="advantages"
+                  title="price"
+                />
+              </div>
+
+              <div class="advantages__item-title">Цена</div>
+              <p class="advantages__item-text">
+                Elementum posuere felis lacus diam amet mauris pellentesque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--START ADVANTAGES-->
+    <!--START VISUAL CALC-->
+
+    <div class="visual-calc">
+      <div class="container">
+        <div
+          class="visual-calc__tabs"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <div class="visual-calc__inner">
+            <h2 class="visual-calc__title">
+              <span>1</span> Нажмите на нужный балкон
+            </h2>
+            <div class="visual-calc__items">
+              <a class="visual-calc__item" href="#tab-1">
+                <img
+                  src="./icons/window-1.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+              <a class="visual-calc__item" href="#tab-2">
+                <img
+                  src="./icons/window-2.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+              <a class="visual-calc__item" href="#tab-3">
+                <img
+                  src="./icons/window-3.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+              <a class="visual-calc__item" href="#tab-4">
+                <img
+                  src="./icons/window-4.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+              <a class="visual-calc__item" href="#tab-5">
+                <img
+                  src="./icons/window-5.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+              <a class="visual-calc__item" href="#tab-6">
+                <img
+                  src="./icons/window-6.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="visual-calc__wrap">
+            <div class="visual-calc__body">
+              <h2 class="visual-calc__title">
+                <span>2</span> Выберите размеры
+              </h2>
+              <div class="visual-calc__block" id="tab-1">
+                <img
+                  src="./icons/window-7.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <div class="visual-calc__block" id="tab-2">
+                <img
+                  src="./icons/window-2.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <div class="visual-calc__block" id="tab-3">
+                <img
+                  src="./icons/window-3.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <div class="visual-calc__block" id="tab-4">
+                <img
+                  src="./icons/window-4.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <div class="visual-calc__block" id="tab-5">
+                <img
+                  src="./icons/window-5.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <div class="visual-calc__block" id="tab-6">
+                <img
+                  src="./icons/window-6.svg"
+                  alt="example window"
+                  title="example window"
+                />
+              </div>
+              <input
+                class="input-width"
+                type="text"
+                name="width"
+                placeholder="0"
+              />
+              <input
+                class="input-height"
+                type="text"
+                name="height"
+                placeholder="0"
+              />
+            </div>
+            <div class="visual-calc__colright">
+              <div class="visual-calc__type">
+                <h2 class="visual-calc__title">
+                  <span>3</span>Выберите тип остекления
+                </h2>
+                <form class="visual-calc__type-form">
+                  <div class="visual-calc__type-item">
+                    <input
+                      class="visual-calc__radio"
+                      name="type"
+                      type="radio"
+                      value="snow"
+                      id="radio-check"
+                      checked
+                    />
+                    <label class="visual-calc__type-label" for="radio-check">
+                      <img src="./icons/snow.svg" alt="cold" title="cold" />
+                    </label>
+                    <div class="visual-calc__type-text">Холодное</div>
+                  </div>
+                  <div class="visual-calc__type-item">
+                    <input
+                      class="visual-calc__radio"
+                      name="type"
+                      type="radio"
+                      value="sun"
+                      id="radio-check2"
+                    />
+                    <label class="visual-calc__type-label" for="radio-check2">
+                      <img src="./icons/sun.svg" alt="warm" title="warm" />
+                    </label>
+                    <div class="visual-calc__type-text">Теплое</div>
+                  </div>
+                  <div class="visual-calc__type-item">
+                    <input
+                      class="visual-calc__radio"
+                      name="type"
+                      type="radio"
+                      value="snow-sun"
+                      id="radio-check3"
+                    />
+                    <label class="visual-calc__type-label" for="radio-check3">
+                      <img
+                        src="./icons/snow-sun.svg"
+                        alt="semi-warm"
+                        title="semi-warm"
+                      />
+                    </label>
+                    <div class="visual-calc__type-text">Полутеплое</div>
+                  </div>
+                </form>
+              </div>
+              <div class="visual-calc__more">
+                <h2 class="visual-calc__title">
+                  <span>4</span>Дополнительные операции
+                </h2>
+                <form class="visual-calc__more-form">
+                  <div class="visual-calc__more-item">
+                    <p class="visual-calc__more-text">Вынос остекления</p>
+                    <div class="visual-calc__more-inner">
+                      <select>
+                        <option>Не требуется</option>
+                        <option>Tребуется</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="visual-calc__more-item">
+                    <p class="visual-calc__more-text">Кладка из пеноблока</p>
+                    <div class="visual-calc__more-inner">
+                      <select>
+                        <option>Не требуется</option>
+                        <option>Tребуется</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="visual-calc__more-item">
+                    <p class="visual-calc__more-text">Балконная крыша</p>
+                    <div class="visual-calc__more-inner">
+                      <select>
+                        <option>Не требуется</option>
+                        <option>Tребуется</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="visual-calc__more-item">
+                    <p class="visual-calc__more-text">Москитная сетка</p>
+                    <div class="visual-calc__more-inner">
+                      <select>
+                        <option>Не требуется</option>
+                        <option>Tребуется</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="visual-calc__price-box">
+                <p class="visual-calc__price">Итог: <span>0 рублей</span></p>
+
+                <!--"popup-form" - class for modal-->
+                <a class="visual-calc__price-btn popup-form" href="#modal-form"
+                  >Вызвать замерщика</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END VISUAL CALC-->
+
+    <!--START SALES-->
+    <section class="sales">
+      <div class="container">
+        <h1 class="sales__title"><span>Акции</span> и предложения</h1>
+        <div class="sales__inner">
+          <div
+            class="sales__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <div class="sales__item-img">
+              <img src="./img/sale.png" alt="sales" title="description sales" />
+            </div>
+            <div class="sales__item-title">Название акции</div>
+            <p class="sales__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero a...
+            </p>
+          </div>
+          <div
+            class="sales__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <div class="sales__item-img">
+              <img src="./img/sale.png" alt="sales" title="description sales" />
+            </div>
+            <div class="sales__item-title">Название акции</div>
+            <p class="sales__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero a...
+            </p>
+          </div>
+          <div
+            class="sales__item"
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+          >
+            <div class="sales__item-img">
+              <img src="./img/sale.png" alt="sales" title="description sales" />
+            </div>
+            <div class="sales__item-title">Название акции</div>
+            <p class="sales__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero a...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END SALES-->
+
+    <!--START SERTIFICAT-->
+
+    <section class="sertificat">
+      <div class="container">
+        <h1 class="sertificat__title">Сертификаты</h1>
+        <div class="sertificat__slider">
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+          <div class="sertificat__item">
+            <img
+              src="./img/sertificat.png"
+              alt="sertificat"
+              title="sertificat"
+            />
+          </div>
+        </div>
+        <div class="sertificat__btn-m">
+          <a href="#">Показать все</a>
+        </div>
+      </div>
+    </section>
+    <!--END SERTIFICAT-->
+
+    <!--START TEAM-->
+
+    <section class="team">
+      <div class="container">
+        <div class="team__inner">
+          <div class="team__info">
+            <h1 class="team__title"><span>Команда</span> специалистов</h1>
+            <div class="team__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              purus ut massa egestas urna ut. Vitae ipsum nunc libero amet velit
+              arcu. Massa amet, a, habitant diam tortor lorem non congue sit.
+              Pretium aliquam, mattis imperdiet viverra aliquam. Accumsan lectus
+              maecenas eleifend auctor. Quisque
+            </div>
+          </div>
+          <div class="team__box">
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+            <div class="team__item">
+              <div class="team__item-img">
+                <img src="./img/team-avatar.png" alt="avatar" title="avatar" />
+              </div>
+              <div class="team__item-name">Андрей Андреев</div>
+              <div class="team__item-post">Должность</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END TEAM-->
+
+    <!--START FOOTER-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="footer__logo" href="#">
+            <img src="./icons/logo.svg" alt="logo"
+          /></a>
+
+          <nav class="footer__menu-nav">
+            <div class="footer__menu-nav-wrapper">
+              <p class="footer__menu-title">Меню</p>
+              <ul class="footer__menu-block">
+                <li class="footer__menu-list">
+                  <a class="footer__menu-link" href="#">Балконы и лоджии</a>
+                </li>
+                <li class="footer__menu-list">
+                  <a class="footer__menu-link" href="#">Окна</a>
+                </li>
+                <li class="footer__menu-list">
+                  <a class="footer__menu-link" href="#">Двери</a>
+                </li>
+                <li class="footer__menu-list">
+                  <a class="footer__menu-link" href="#">Дома и коттеджи</a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="footer__menu-block">
+              <li class="footer__menu-title footer__menu-title--none">Меню</li>
+              <li class="footer__menu-list">
+                <a class="footer__menu-link" href="#">Калькулятор</a>
+              </li>
+              <li class="footer__menu-list">
+                <a class="footer__menu-link" href="#">Акции</a>
+              </li>
+              <li class="footer__menu-list">
+                <a class="footer__menu-link" href="#">Сотрудничество</a>
+              </li>
+              <li class="footer__menu-list">
+                <a class="footer__menu-link" href="#">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__menu">
+            <h4 class="footer__menu-title">Контакты</h4>
+            <div class="footer__menu-item">
+              <p class="footer__menu-item-text">Телефон:</p>
+              <a class="footer__menu-item-info" href="tel:79999999999"
+                >+7 999 999 99 99</a
+              >
+            </div>
+
+            <div class="footer__menu-item">
+              <p class="footer__menu-item-text">Эл. почта:</p>
+              <a class="footer__menu-item-info" href="mailto:email@email.ru"
+                >email@email.ru</a
+              >
+            </div>
+            <div class="footer__menu-item">
+              <p class="footer__menu-item-text">Адрес:</p>
+              <div class="footer__menu-item-info">
+                г.Город, ул. Улица, д. Дом
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--END FOOTER-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
