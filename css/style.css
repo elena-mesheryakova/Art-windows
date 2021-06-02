@@ -1810,7 +1810,7 @@ input:checked
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 43%; }
+    width: 40%; }
   .team__item {
     display: -webkit-box;
     display: -ms-flexbox;
