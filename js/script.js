@@ -1,28 +1,18 @@
-$(document).ready(function () {
-//burger-menu
+$(document).ready(function(){
+        
 	$('.menu-burger').click(function() {
-        $('.menu').toggleClass('active');
-        $('.menu-burger').toggleClass('active');
-        $('.header__border').toggleClass('active');
-        $('.header-top__item-info').toggleClass('active');
-    });
-
+    $('.menu').toggleClass('active');
+    $('.menu-burger').toggleClass('active');
+    $('.header__border').toggleClass('active');
+    $('.header-top__item-info').toggleClass('active');
+   });
+//burger-menu
 
 //modal window
     $('.popup-form').magnificPopup({
 		type: 'inline',
 		preloader: false,
-		focus: '#name',
-
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
+	
 	});
 
 
@@ -107,7 +97,7 @@ $(document).ready(function () {
 		$('.visual-calc__block').removeClass('visual-calc__block--active');
 
 		$(this).addClass('visual-calc__item--active');
-		$($(this).attr('href')).addClass('visual-calc__block--active')
+		$($(this).attr('href')).addClass('visual-calc__block--active');
 
 	});
 	
@@ -119,7 +109,7 @@ $(document).ready(function () {
 		$(this).toggleClass('active');
 		
 	  });
-	  $('.calculation__type-label').click(function(e) {
+	  $('.calculation__type-label').click(function() {
 	
 		$('.calculation__type-label').removeClass('active');
 		$(this).addClass('active');

@@ -577,6 +577,7 @@ td {
     cursor: pointer;
   }
   &__radio {
+    -webkit-appearance: none;
     appearance: none;
   }
   &__type-label {
@@ -623,6 +624,7 @@ td {
     select {
       width: 100%;
       padding: 10px;
+      -webkit-appearance: none;
       appearance: none;
       position: relative;
     }
